@@ -9,7 +9,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        currMin = float('-inf')
+        currMin = float('inf')
         maxProfit = 0
         
         #keep track of the min price
