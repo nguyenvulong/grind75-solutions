@@ -17,8 +17,10 @@ class Solution:
                 return mid
             elif target > nums[mid]:
                 l = mid + 1
+                #l = mid may create endless loop
             else:
-                r = mid
+                r = mid -1
+                #r = mid should work too
         if target == nums[l]:
             return l
         return -1
